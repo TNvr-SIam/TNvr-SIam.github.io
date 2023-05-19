@@ -6,28 +6,24 @@
 	var projectsArray = [
 		{
 			"id": "projectTykOperator",
-			"url": "https://github.com/TykTechnologies/tyk-operator"
 		},
 		{
 			"id": "projectCloudixia",
-			"url": "https://ajtima.com"
 		},
 		{
 			"id": "projectServ",
-			"url": "https://www.getserv.io"
 		},
 		{
 			"id": "projectSedkodes",
-			"url": "https://www.youtube.com/channel/UCXR-k7wwwhdovpXXkRitJ_g"
 		}
 	]
 
 	projectsArray.forEach(element => {
 		var projectObject = document.getElementById(element.id);
 		projectObject.style.cursor = 'pointer';
-		projectObject.onclick = function() {
-			window.open( 
-				element.url, "_blank"); 
+		projectObject.onclick = function () {
+			window.open(
+				element.url, "_blank");
 		}
 	});
 
@@ -299,7 +295,7 @@
 		sliderMain();
 		owlCrouselFeatureSlide();
 
-		$(window).on('beforeunload', function() {
+		$(window).on('beforeunload', function () {
 			$(window).scrollTop(0);
 		});
 	});
